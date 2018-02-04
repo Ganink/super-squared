@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Super Squared!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
+    <style>
+        .minep {
+            width: 30%;
+            display: inline-flex;
+        }
+
+        .modal-card-body {
+            color: #222;
+            text-align: justify;
+            word-wrap: break-word;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="section">
+        <nav class="level">
+            <a class="level-item has-text-centered mdl button is primary is-outlined is-small is-info"> Como jugar
+                <div class="modal">
+                    <div class="modal-background"></div>
+                    <div class="modal-card">
+                        <header class="modal-card-head">
+                            <p class="modal-card-title">COMO JUGAR</p>
+                            <button class="delete" aria-label="close"></button>
+                        </header>
+                        <section class="modal-card-body">
+                            <p>
+                                <strong>Controles Básicos: </strong>
+                                <br>Para mover a nuestro personaje usarémos las flechas de dirección
+                                <strong>izquierda (
+                                    <=)</strong> y
+                                        <strong>derecha (=>).
+                                        </strong>
+                                        <br>Para saltar pulsaremos la barra espaciadora
+                                        <strong>( |------------|).</strong>
+                                        <br>Para escalar las paredes podremos ir saltando de pared en pared, o podemos mantener
+                                        pulsado la barra espaciadora para poder escalar sin cambiar de pared.
+                            </p>
+                            <p>
+                                <br>
+                                <strong>Objetivo del juego: </strong>
+                                <br>El juego consiste en Conseguir el mayor número de rombos en el tiempo indicado sin morir,
+                                por lo que deberá de calcular bien los saltos para no morir en el intento.
+                            </p>
+                        </section>
+                        <footer class="modal-card-foot">
+                            <button class="button is primary is-outlined is-small is-info">CERRAR</button>
+                        </footer>
+                    </div>
+                </div>
+            </a>
+            <p class="level-item has-text-centered">
+                <a href="index.html">
+                    <img src="assets/logo.png" alt="super squared">
+                </a>
+            </p>
+            <!-- modal -->
+            <a class="level-item has-text-centered mdl button is primary is-outlined is-small is-info" id="pt"> SCORE
+                <div class="modal">
+                    <div class="modal-background"></div>
+
+                    <div class="modal-card">
+                        <header class="modal-card-head">
+                            <p class="modal-card-title">SCORE</p>
+                            <button class="delete" aria-label="close"></button>
+                        </header>
+                        <section class="modal-card-body">
+                            <h1>Mejores Puntuaciones</h1>
+                            <ul class="pt">
+                            </ul>
+                        </section>
+                        <footer class="modal-card-foot">
+                            <button class="button is primary is-outlined is-small is-info">CERRAR</button>
+                        </footer>
+                    </div>
+                </div>
+            </a>
+        </nav>
+    </section>
+    <div class="container is-large" style="border: 1px solid #222;">
+        <div class="notification">
+            <nav class="level">
+                <a class="level-item has-text-centered mdl button is-primary is-small is-success" href="easy.html"> EASY
+                </a>
+                <a class="level-item has-text-centered mdl button is-primary is-small is-warning" href="medium.html"> MEDIUM
+                </a>
+                <a class="level-item has-text-centered mdl button is-primary is-small is-danger" href="hard.html"> HARD
+                </a>
+
+            </nav>
+
+            <a href="easy.html" class="link NG">
+                <div class="box">
+                    <article class="media">
+                        <div class="media-left">
+                            <figure class="image is-128x128">
+                                <img src="assets/img/level1.png" alt="Nivel 1">
+                            </figure>
+                        </div>
+                        <div class="media-content">
+                            <div class="content">
+                                <p>
+                                    <strong>Nivel 1</strong>
+                                    <small>Tiempo: 150 Seg</small>
+                                    <br> Primer nivel del juego, ¿ Podrás ser capáz de pasarlo en el menor tiempo posible ?
+                                    <br> Suerte!
+                                </p>
+                            </div>
+                            <nav class="level is-mobile">
+                                <div class="level-left">
+                                    <a class="level-item">
+                                        <span class="icon is-small">
+                                            <i class="fas fa-reply"></i>
+                                        </span>
+                                    </a>
+                                    <a class="level-item">
+                                        <span class="icon is-small">
+                                            <i class="fas fa-retweet"></i>
+                                        </span>
+                                    </a>
+                                    <a class="level-item">
+                                        <span class="icon is-small">
+                                            <i class="fas fa-heart"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                            </nav>
+                        </div>
+                    </article>
+                </div>
+            </a>
+            <a href="medium.html" class="link NG">
+                <div class="box">
+                    <article class="media">
+                        <div class="media-left">
+                            <figure class="image is-128x128">
+                                <img src="assets/img/level2.png" alt="Nivel 1">
+                            </figure>
+                        </div>
+                        <div class="media-content">
+                            <div class="content">
+                                <p>
+                                    <strong>Nivel 2</strong>
+                                    <small>Tiempo: 150 Seg</small>
+                                    <br> Segundo nivel del juego, ¿ Podrás ser capáz de pasarlo en el menor tiempo posible ?
+                                    <br> Suerte!
+                                </p>
+                            </div>
+                            <nav class="level is-mobile">
+                                <div class="level-left">
+                                    <a class="level-item">
+                                        <span class="icon is-small">
+                                            <i class="fas fa-reply"></i>
+                                        </span>
+                                    </a>
+                                    <a class="level-item">
+                                        <span class="icon is-small">
+                                            <i class="fas fa-retweet"></i>
+                                        </span>
+                                    </a>
+                                    <a class="level-item">
+                                        <span class="icon is-small">
+                                            <i class="fas fa-heart"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                            </nav>
+                        </div>
+                    </article>
+                </div>
+            </a>
+            <a href="hard.html" class="link NG">
+                <div class="box">
+                    <article class="media">
+                        <div class="media-left">
+                            <figure class="image is-128x128">
+                                <img src="assets/img/level3.png" alt="Nivel 1">
+                            </figure>
+                        </div>
+                        <div class="media-content">
+                            <div class="content">
+                                <p>
+                                    <strong>Nivel 3</strong>
+                                    <small>Tiempo: 250 Seg</small>
+                                    <br> Último nivel del juego, ¿ Podrás ser capáz de pasarlo en el menor tiempo posible ?
+                                    <br> Suerte!
+                                </p>
+                            </div>
+                            <nav class="level is-mobile">
+                                <div class="level-left">
+                                    <a class="level-item">
+                                        <span class="icon is-small">
+                                            <i class="fas fa-reply"></i>
+                                        </span>
+                                    </a>
+                                    <a class="level-item">
+                                        <span class="icon is-small">
+                                            <i class="fas fa-retweet"></i>
+                                        </span>
+                                    </a>
+                                    <a class="level-item">
+                                        <span class="icon is-small">
+                                            <i class="fas fa-heart"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                            </nav>
+                        </div>
+                    </article>
+                </div>
+            </a>
+
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="content has-text-centered">
+                <p>
+                    <strong>Christian Calero Erazo © 2018</strong>
+                </p>
+                <p>
+                    <strong>Bulma</strong> by
+                    <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is licensed
+                    <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content is licensed
+                    <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
