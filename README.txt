@@ -1,4 +1,4 @@
-LINK: https://ganink.github.io/super-squared/
+LINK: https://ganink.github.io/Super-Squared/
 
 
 HERO y ENEMYS: inspirados en Super Meat Boy!
